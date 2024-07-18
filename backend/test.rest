@@ -1,0 +1,27 @@
+Post http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{"username": "zack", "password": "Pass1234"}
+
+###
+
+Post http://127.0.0.1:8000/signup
+Content-Type: application/json
+
+
+{"username": "zack", "password": "Pass1234", "email": "zack@gmai.com"}
+
+###
+
+GET  http://127.0.0.1:8000/test_token
+Content-Type: application/json
+Authorization: Token 7afefad10c5e8548e375c5180f3002050a78130b
+
+{}
+
+
+GET  http://127.0.0.1:8000/product_info
+Content-Type: application/json
+Authorization: Token 5ff9b5c8e218f6657d7b17319870b2c35f282f87
+
+{}
